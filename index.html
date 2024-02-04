@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather APP</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <main>
+        <h1 class="animate-charcter" style="position:absolute; top: 8rem">Personal website - Assignment 3</h1>
+        <div class="card__container">
+            <div class="card__content">
+                <!--         card front -->
+                <div class="card__face card__front">
+                    <h1>Weather App</h1>
+                    <form style="display: flex; justify-content: center; align-items: center;">
+                        <input style="width: 60%;" id="form__input" type="text" placeholder="Enter City Name" required="required"
+                            autofocus />
+                        <button style="width: 40%;" id="form__btn" class="btn" type="submit">Get Weather</button>
+                    </form>
+                </div>
+                <!--         card back -->
+                <div class="card__face card__back">
+                    <div id="failedToFetchWeatherInfo"></div>
+                    <div id="weatherInfo"></div>
+                    <button class='btn btn__back'>
+                        Reset
+                    </button>
+
+                </div>
+            </div>
+        </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
